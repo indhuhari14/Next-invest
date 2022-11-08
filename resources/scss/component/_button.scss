@@ -1,0 +1,41 @@
+.button-purple {
+    background-color : $clr-purple;
+    color: $clr-white;
+    border: 1px solid $clr-purple;
+    &:hover {
+        background-color: $clr-purple-deep;
+        border-color: $clr-purple-deep;
+    }
+}
+
+.button-pink {
+    background-color: $clr-pink;
+    color: $clr-purple;
+    border: 1px solid $clr-pink;
+    &:hover {
+        background-color: $clr-pink-deep;
+        border-color: $clr-pink-deep;
+    }
+}
+.button-white {
+    background-color: $clr-white;
+    color: $clr-purple;
+    border: 1px solid $clr-purple;
+    &:hover {
+        background-color: $clr-purple-deep;
+        border-color: $clr-purple-deep;
+    }
+}
+.button { 
+    cursor: pointer;
+    border-radius: 0.4em;
+    font-size: 16px;
+    font-family: inherit;    
+}
+
+.button-l {
+    padding: 1.5rem 2.5rem;
+}
+.button-s{
+    padding: 1rem 1.5rem;
+}

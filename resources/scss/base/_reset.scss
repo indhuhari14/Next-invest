@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+picture {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+/* Set up body */
+body {
+    font-family: $ff-sans;
+    font-size: $fs-300;
+    color: $clr-grey-dark;
+    background-color: $clr-white;
+    line-height: 1.5;
+    min-height: 100vh;
+    
+    display: grid;
+    grid-template-rows: min-content 1fr;
+}
+
+/* Makes img easier to work */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Makes form element easier to work with */
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+}
+/* Removes animation for the people who have turned them off */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::after,
+    *::before {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

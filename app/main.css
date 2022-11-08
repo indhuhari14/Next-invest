@@ -1,0 +1,269 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+/* Set up body */
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  color: hsl(0deg, 0%, 20%);
+  background-color: hsl(0deg, 0%, 100%);
+  line-height: 1.5;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
+/* Makes img easier to work */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Makes form element easier to work with */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+/* Removes animation for the people who have turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+*::after,
+*::before {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.text-white {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.text-purple {
+  color: hsl(248deg, 56%, 55%);
+}
+
+.text-pink {
+  color: hsl(345deg, 100%, 91%);
+}
+
+.text-grey-lighter {
+  color: hsl(0deg, 0%, 93%);
+}
+
+.text-grey-light {
+  color: hsl(0deg, 0%, 60%);
+}
+
+.text-grey-dark {
+  color: hsl(0deg, 0%, 20%);
+}
+
+.bg-white {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.ff-sans {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.fs-600 {
+  font-size: 3.75rem;
+}
+
+.fs-500 {
+  font-size: 3rem;
+}
+
+.fs-400 {
+  font-size: 1.5rem;
+}
+
+.fs-300 {
+  font-size: 1rem;
+}
+
+.fs-200 {
+  font-size: 0.875rem;
+}
+
+.fs-100 {
+  font-size: 0.625rem;
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 1.3;
+}
+
+.letter-spacing-3 {
+  letter-spacing: 1.5;
+}
+
+.letter-spacing-4 {
+  letter-spacing: 1.7;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+.flex {
+  display: flex;
+}
+
+.flow *:where(:not(:first-child)) {
+  margin-top: 1.25rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.d-block {
+  display: block;
+}
+
+.container {
+  padding: 2em;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+.button-purple {
+  background-color: hsl(248deg, 56%, 55%);
+  color: hsl(0deg, 0%, 100%);
+  border: 1px solid hsl(248deg, 56%, 55%);
+}
+.button-purple:hover {
+  background-color: hsl(248deg, 45%, 51%);
+  border-color: hsl(248deg, 45%, 51%);
+}
+
+.button-pink {
+  background-color: hsl(345deg, 100%, 91%);
+  color: hsl(248deg, 56%, 55%);
+  border: 1px solid hsl(345deg, 100%, 91%);
+}
+.button-pink:hover {
+  background-color: hsl(344deg, 49%, 80%);
+  border-color: hsl(344deg, 49%, 80%);
+}
+
+.button-white {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(248deg, 56%, 55%);
+  border: 1px solid hsl(248deg, 56%, 55%);
+}
+.button-white:hover {
+  background-color: hsl(248deg, 45%, 51%);
+  border-color: hsl(248deg, 45%, 51%);
+}
+
+.button {
+  cursor: pointer;
+  border-radius: 0.4em;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.button-l {
+  padding: 1.5rem 2.5rem;
+}
+
+.button-s {
+  padding: 1rem 1.5rem;
+}
+
+.card {
+  flex-direction: column;
+  max-width: 23.125rem;
+  box-shadow: 0px 24px 60px rgba(51, 51, 51, 0.16);
+  padding: 1.5em;
+}
+.card .content-holder {
+  flex-direction: column;
+}
+.card .flow--small-space {
+  margin-top: 0.75rem;
+}
+
+.progress-bar {
+  max-width: 100%;
+  height: 0.4em;
+  background-color: hsl(0deg, 0%, 93%);
+  position: relative;
+}
+.progress-bar::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 55%;
+  height: 0.4em;
+  background-color: hsl(248deg, 56%, 55%);
+}
+
+.primary-header {
+  background-color: grey;
+}
+.primary-header .primary-navigation {
+  list-style: none;
+}
+.primary-header .primary-navigation a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */
